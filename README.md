@@ -1,51 +1,93 @@
-# VSCode Military Themes
+# Military Themes — VS Code Color Theme Extension
 
-Extensão personalizada de temas para VSCode com estética **militar**, criada especialmente para o Thales.
+![VSCode](https://img.shields.io/badge/VS_Code-%23007ACC.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)
 
-## Temas inclusos (objetivo final)
+Extensão de **Color Theme** para Visual Studio Code com estética **militar**, contendo 5 temas dark de alto contraste e legíveis.
 
-1. **Military Green Dark** — Verde escuro militar (olive drab / forest dark)
-2. **Military Purple Ops** — Verde base + detalhes em roxo tático
-3. **Military Gray Tactical** — Cinza militar + accents verdes
-4. **Military Red Alert** — Verde escuro + vermelho militar (alerta)
-5. **Military Blue Force** — Verde + azul marinho tático
+## Temas inclusos
 
-Todos são **dark themes**, com contraste alto, legíveis por longas sessões de código, e ficam salvos permanentemente nas configurações de extensão do VSCode (aparecem no seletor oficial de Color Theme).
+| Tema | Descrição |
+|------|-----------|
+| **Military Green Dark** | Verde escuro militar / Olive Drab |
+| **Military Purple Ops** | Verde base + detalhes em roxo tático |
+| **Military Gray Tactical** | Cinza militar (gun metal) + accents verdes |
+| **Military Red Alert** | Verde escuro + vermelho military / blood red |
+| **Military Blue Force** | Verde base + azul marinho tático / navy |
 
-## Como gerar a extensão com o Cline
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/Thales971/vscode-military-themes.git
-   cd vscode-military-themes
-   ```
-
-2. Abra a pasta no VSCode
-
-3. Abra o **Cline** e cole o conteúdo completo do arquivo **`CLINE_PROMPT.md`**
-
-4. Deixe o Cline executar o plano passo a passo (ele vai criar package.json, pastas themes/, os 5 arquivos de tema, README final, etc.)
-
-5. Depois de pronto, teste com **F5** (abre Extension Development Host)
-
-6. Para instalar localmente:
-   ```bash
-   npm install -g @vscode/vsce
-   vsce package
-   code --install-extension *.vsix
-   ```
-
-## Status do projeto
-
-- [x] Repositório criado
-- [x] Prompt detalhado para o Cline (`CLINE_PROMPT.md`)
-- [ ] Scaffold completo da extensão
-- [ ] 5 temas coloridos definidos
-- [ ] package.json + contributes.themes
-- [ ] README final + screenshots
-- [ ] Publicação no Marketplace (opcional)
+Todos os temas são **dark**, com melhorias de contraste e syntax highlighting completo:
+- ✅ Cores mais vibrantes e alto contraste
+- ✅ Syntax highlighting completo (keywords, funções, tipos, números, strings, comments)
+- ✅ Estilos: bold, italic, underline em elementos específicos
+- ✅ Mais de 80 tokens de cor por tema
+- ✅ UI melhorada (borders, hover, seleção, peek view, merge editor)
 
 ---
 
-Feito com vibe code 🚀  
-Thales Vitor Boehm + Grok + Cline
+## Como testar (F5)
+
+1. Abra a pasta no VS Code
+2. Pressione **F5**
+3. Na nova janela, pressione **Ctrl+K Ctrl+T**
+4. Escolha um tema Military
+
+## Como empacotar (`.vsix`)
+
+```bash
+npm install -g @vscode/vsce
+vsce package
+code --install-extension *.vsix
+```
+
+## Como usar em qualquer PC
+
+1. Gere o `.vsix` uma vez
+2. Copie o `.vsix` para Pen drive / GitHub
+3. Instale em cada PC com: `code --install-extension military-themes-0.1.0.vsix`
+4. Ative o **VS Code Sync** (Configurações → Sincronização) para o tema ser lembrado automaticamente
+
+---
+
+## Estrutura do projeto
+
+```
+vscode-military-themes/
+├── package.json
+├── README.md
+├── LICENSE
+├── .vscodeignore
+├── .gitignore
+├── .vscode/
+│   └── launch.json
+├── themes/
+│   ├── military-green-dark-color-theme.json
+│   ├── military-purple-ops-color-theme.json
+│   ├── military-gray-tactical-color-theme.json
+│   ├── military-red-alert-color-theme.json
+│   └── military-blue-force-color-theme.json
+└── images/
+    └── icon.png
+```
+
+---
+
+## Contribuindo
+
+1. Fork
+2. `git checkout -b feature/nova-cor`
+3. `git commit -m 'feat: adiciona nova paleta'`
+4. `git push origin feature/nova-cor`
+5. Abra um Pull Request
+
+---
+
+## Créditos
+
+Desenvolvido por **Thales Vitor Boehm** com o auxílio de **Cline** 🤖
+
+---
+
+## License
+
+MIT — Veja o arquivo [LICENSE](LICENSE) para mais detalhes.

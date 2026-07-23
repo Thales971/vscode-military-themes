@@ -1,0 +1,62 @@
+{
+  "name": "military-themes",
+  "displayName": "Military Themes",
+  "description": "Temas dark com estética militar: verde escuro, purple ops, gray tactical, red alert e blue force. Criado para programadores que gostam de vibe militar.",
+  "version": "0.1.0",
+  "publisher": "Thales971",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "military",
+    "dark",
+    "green",
+    "olive",
+    "tactical",
+    "purple",
+    "red",
+    "blue"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Military Green Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/military-green-dark-color-theme.json"
+      },
+      {
+        "label": "Military Purple Ops",
+        "uiTheme": "vs-dark",
+        "path": "./themes/military-purple-ops-color-theme.json"
+      },
+      {
+        "label": "Military Gray Tactical",
+        "uiTheme": "vs-dark",
+        "path": "./themes/military-gray-tactical-color-theme.json"
+      },
+      {
+        "label": "Military Red Alert",
+        "uiTheme": "vs-dark",
+        "path": "./themes/military-red-alert-color-theme.json"
+      },
+      {
+        "label": "Military Blue Force",
+        "uiTheme": "vs-dark",
+        "path": "./themes/military-blue-force-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Thales971/vscode-military-themes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Thales971/vscode-military-themes/issues"
+  },
+  "homepage": "https://github.com/Thales971/vscode-military-themes",
+  "icon": "images/icon.png"
+}
