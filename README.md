@@ -84,7 +84,7 @@ vscode-military-themes/
 
 ## Créditos
 
-Desenvolvido por **Thales Vitor Boehm** com o auxílio de **Cline** 🤖
+Desenvolvido por **Thales** com o auxílio de **Cline** 🤖
 
 ---
 
